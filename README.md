@@ -35,7 +35,7 @@ Order History: Track of order history and toltel amount of items sold is maintai
 Admin Interface: Manage inventory and view sales reports.
 
 ### Project Structure
-
+`
 GroceryStore/
 ├── backend/
 │   ├── orders_dao.py
@@ -68,7 +68,6 @@ GroceryStore/
 ├── .gitignore
 ├── homepge.jpj
 └── README.md
-
-
+`
 
 
