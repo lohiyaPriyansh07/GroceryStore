@@ -24,7 +24,7 @@ In this python project, we will build a grocery store management application. It
 5. Start the Flask server:
 `flask run`
 
-Navigate to the frontend directory `index.html` open with live server
+6. Navigate to the frontend directory `index.html` open with live server
 
 ### Features
 
