@@ -27,13 +27,14 @@ In this python project, we will build a grocery store management application. It
 Navigate to the frontend directory `index.html` open with live server
 
 ### Features
-```
-1.Product Catalog: Display and browse a wide range of grocery items present in store 
-2.Product Category: Product is divide into category whether its price is calculated as per weight or per piece
-3.Billing: Billing can be done for perticular customer and its details are stored
-4.Order History: Track of order history and toltel amount of items sold is maintained
-5.Admin Interface: Manage inventory and view sales reports.
-```
+
+1.Product Catalog: Display and browse a wide range of grocery items present in store \n
+2.Product Category: Product is divide into category whether its price is calculated as per weight or per piece \n
+3.Billing: Billing can be done for perticular customer and its details are stored \n
+4.Order History: Track of order history and toltel amount of items sold is maintained \n
+5.Admin Interface: Manage inventory and view sales reports. \n
+
+
 ### Project Structure
 ```
 GroceryStore/
