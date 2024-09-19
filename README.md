@@ -1,4 +1,5 @@
-# python_projects_grocery_webapp
+# groceryStore
+
 In this python project, we will build a grocery store management application. It will be 3 tier application,
 1. Front end: UI is written in HTML/CSS/Javascript/Bootstrap
 2. Backend: Python and Flask
@@ -8,16 +9,66 @@ In this python project, we will build a grocery store management application. It
 
 ### Installation Instructions
 
-Download mysql for windows: https://dev.mysql.com/downloads/installer/
+Clone the repository:
+`git clone https://github.com/yourusername/GroceryStore.git`
 
-`pip install mysql-connector-python`
+Navigate to the backend directory:
+`cd GroceryStore/server`
 
-### Exercise 
+Install dependencies:
+`pip install -r requirements.txt`
 
-The grocery management system that we built is functional but after we give it to users for use, we got following feedback. The exercise for you to address this feedback and implement these features in the application,
-1. **Products Module**: In products page that lists current products, add an edit button next to delete button that allows to edit current product
-2. **Products Module**: Implement a new form that allows you to add new UOM in the application. For example you want to add **Cubic Meter** as a new UOM as the grocery store decided to start selling **wood** as well. This requies changing backend (python server) and front end (UI) both.
-3. **Orders Module**: When you place an order it doesn't have any validation. For example one can enter an order with empty customer name. You need to add validation for customer name and invalid item name or not specifying a quantity etc. This is only front end UI work.
-4. **Orders Module**: In new order page there is a bug. When you manually change total price of an item it doesn't change the grand total. You need to fix this issue.
-5. **Orders Module**: In the grid where orders are listed, add a view button in the last column. On clicking this button it should show you order details where individual items in that order are listed along with their price/quantity etc.
+Create a `.env` file in the `server` directory and add your database credentials:
+`DATABASE_URL=your_database_url`
+
+Start the Flask server:
+`flask run`
+
+Navigate to the frontend directory `index.html` open with live server
+
+### Features
+
+Product Catalog: Display and browse a wide range of grocery items present in store 
+Product Category: Product is divide into category whether its price is calculated as per weight or per piece
+Billing: Billing can be done for perticular customer and its details are stored
+Order History: Track of order history and toltel amount of items sold is maintained
+Admin Interface: Manage inventory and view sales reports.
+
+### Project Structure
+
+GroceryStore/
+├── backend/
+│   ├── orders_dao.py
+│   ├── products_dao.py
+│   ├── uom_dao.py
+│   ├── server.py
+│   └── sql_connection.py
+│
+├── ui/
+│   ├── css/
+|   |   ├── custom.css
+|   |   ├── sidebar-menu.css
+|   |   ├── bootstrap.min.css
+|   |   └── style.css
+│   ├── js/
+│   │   ├── custom/
+│   │   │   ├── common.js
+│   │   │   ├── dashboard.js
+│   │   │   ├── order.js
+│   │   │   └── manage-product.js
+│   │   ├── packages/
+│   │   │   ├── bootstrap.min.js
+│   │   |   └── jquery.min.js
+|   |   └── images/
+|   |   
+│   ├── index.html
+│   ├── manage-product.html
+│   └── order.html
+│
+├── .gitignore
+├── homepge.jpj
+└── README.md
+
+
+
 
