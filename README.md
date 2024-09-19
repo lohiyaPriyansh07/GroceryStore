@@ -1,41 +1,48 @@
-# groceryStore
+Grocery Store
+In this Python project, we will build a grocery store management application. It will be a 3-tier application:
 
-In this python project, we will build a grocery store management application. It will be 3 tier application,
-1. Front end: UI is written in HTML/CSS/Javascript/Bootstrap
-2. Backend: Python and Flask
-3. Database: mysql
+Front End: UI is written in HTML/CSS/JavaScript/Bootstrap
+Backend: Python and Flask
+Database: MySQL
 
-![](homepage.JPG)
 
-### Installation Instructions
-
+Installation Instructions
 Clone the repository:
-`git clone https://github.com/yourusername/GroceryStore.git`
 
+bash
+Copy code
+git clone https://github.com/yourusername/GroceryStore.git
 Navigate to the backend directory:
-`cd GroceryStore/server`
 
+bash
+Copy code
+cd GroceryStore/backend
 Install dependencies:
-`pip install -r requirements.txt`
 
-Create a `.env` file in the `server` directory and add your database credentials:
-`DATABASE_URL=your_database_url`
+bash
+Copy code
+pip install -r requirements.txt
+Create a .env file in the backend directory and add your database credentials:
 
+env
+Copy code
+DATABASE_URL=your_database_url
 Start the Flask server:
-`flask run`
 
-Navigate to the frontend directory `index.html` open with live server
+bash
+Copy code
+flask run
+Navigate to the frontend directory and open index.html with a live server.
 
-### Features
-
-Product Catalog: Display and browse a wide range of grocery items present in store 
-Product Category: Product is divide into category whether its price is calculated as per weight or per piece
-Billing: Billing can be done for perticular customer and its details are stored
-Order History: Track of order history and toltel amount of items sold is maintained
+Features
+Product Catalog: Display and browse a wide range of grocery items present in the store.
+Product Category: Products are divided into categories based on whether their price is calculated by weight or per piece.
+Billing: Billing can be done for a particular customer, and its details are stored.
+Order History: Track order history and total amount of items sold.
 Admin Interface: Manage inventory and view sales reports.
-
-### Project Structure
-`
+Project Structure
+vbnet
+Copy code
 GroceryStore/
 ├── backend/
 │   ├── orders_dao.py
@@ -46,10 +53,10 @@ GroceryStore/
 │
 ├── ui/
 │   ├── css/
-|   |   ├── custom.css
-|   |   ├── sidebar-menu.css
-|   |   ├── bootstrap.min.css
-|   |   └── style.css
+│   │   ├── custom.css
+│   │   ├── sidebar-menu.css
+│   │   ├── bootstrap.min.css
+│   │   └── style.css
 │   ├── js/
 │   │   ├── custom/
 │   │   │   ├── common.js
@@ -58,16 +65,13 @@ GroceryStore/
 │   │   │   └── manage-product.js
 │   │   ├── packages/
 │   │   │   ├── bootstrap.min.js
-│   │   |   └── jquery.min.js
-|   |   └── images/
-|   |   
+│   │   │   └── jquery.min.js
+│   |── images/
+│   |
 │   ├── index.html
 │   ├── manage-product.html
 │   └── order.html
 │
 ├── .gitignore
-├── homepge.jpj
+├── homepage.JPG
 └── README.md
-`
-
-
